@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_a02a7c8d33924e19abc3ff0d3f764177 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a02a7c8d33924e19abc3ff0d3f764177" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_a02a7c8d33924e19abc3ff0d3f764177 = L.map(
+                                  'map_a02a7c8d33924e19abc3ff0d3f764177',
+                                  {center: [33.642063,-13.535156],
+                                  zoom: 2,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_23c8c05603154b69965074bde16f4f62 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+
+        
+    
+
+            var circle_marker_1fd1374c53524411a61468279e7358e4 = L.circleMarker(
+                [61.52401,105.318756],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_f542b26fef8b4e19bd3b00e112a16917 = L.popup({maxWidth: '300'});
+
+            
+                var html_74aa15069d3c45798f619a2184e3c18f = $('<div id="html_74aa15069d3c45798f619a2184e3c18f" style="width: 100.0%; height: 100.0%;">Russia appeared 108 times in NYTimes articles</div>')[0];
+                popup_f542b26fef8b4e19bd3b00e112a16917.setContent(html_74aa15069d3c45798f619a2184e3c18f);
+            
+
+            circle_marker_1fd1374c53524411a61468279e7358e4.bindPopup(popup_f542b26fef8b4e19bd3b00e112a16917);
+
+            
+        
+    
+
+            var circle_marker_4c983d2d7cbd4508b63f99d1ffbf85fc = L.circleMarker(
+                [33.93911,67.709953],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_e02f606ec18b4296afc53ba34cfcc3a7 = L.popup({maxWidth: '300'});
+
+            
+                var html_f3aa23a21be04e3e90faa3d7a30f0831 = $('<div id="html_f3aa23a21be04e3e90faa3d7a30f0831" style="width: 100.0%; height: 100.0%;">Afghanistan appeared 8 times in NYTimes articles</div>')[0];
+                popup_e02f606ec18b4296afc53ba34cfcc3a7.setContent(html_f3aa23a21be04e3e90faa3d7a30f0831);
+            
+
+            circle_marker_4c983d2d7cbd4508b63f99d1ffbf85fc.bindPopup(popup_e02f606ec18b4296afc53ba34cfcc3a7);
+
+            
+        
+    
+
+            var circle_marker_7c708dd3ae414a0f8d6f00b7d53938a4 = L.circleMarker(
+                [37.5407246,-77.4360481],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_4d2edfd5ac6241518e5180e1c8f8c7d7 = L.popup({maxWidth: '300'});
+
+            
+                var html_a8463fbbebba47149ddc5de5271eafd0 = $('<div id="html_a8463fbbebba47149ddc5de5271eafd0" style="width: 100.0%; height: 100.0%;">Richmond appeared 10 times in NYTimes articles</div>')[0];
+                popup_4d2edfd5ac6241518e5180e1c8f8c7d7.setContent(html_a8463fbbebba47149ddc5de5271eafd0);
+            
+
+            circle_marker_7c708dd3ae414a0f8d6f00b7d53938a4.bindPopup(popup_4d2edfd5ac6241518e5180e1c8f8c7d7);
+
+            
+        
+    
+
+            var circle_marker_63c657ba16974a47bb5542a9aaf36180 = L.circleMarker(
+                [36.1626638,-86.7816016],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_af3c5c94ee0f4b499de070c93dd624f6 = L.popup({maxWidth: '300'});
+
+            
+                var html_51087a4a2e3444caab9a2e242fc9f2d3 = $('<div id="html_51087a4a2e3444caab9a2e242fc9f2d3" style="width: 100.0%; height: 100.0%;">Nashville appeared 3 times in NYTimes articles</div>')[0];
+                popup_af3c5c94ee0f4b499de070c93dd624f6.setContent(html_51087a4a2e3444caab9a2e242fc9f2d3);
+            
+
+            circle_marker_63c657ba16974a47bb5542a9aaf36180.bindPopup(popup_af3c5c94ee0f4b499de070c93dd624f6);
+
+            
+        
+    
+
+            var circle_marker_d76b163a29dc4ef0933e0545481a1d39 = L.circleMarker(
+                [35.5174913,-86.5804473],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_c3560f57844e4531ba923e25771c9f3b = L.popup({maxWidth: '300'});
+
+            
+                var html_e7fa1d376b134a62b6095e9a66cbcfe2 = $('<div id="html_e7fa1d376b134a62b6095e9a66cbcfe2" style="width: 100.0%; height: 100.0%;">Tennessee appeared 2 times in NYTimes articles</div>')[0];
+                popup_c3560f57844e4531ba923e25771c9f3b.setContent(html_e7fa1d376b134a62b6095e9a66cbcfe2);
+            
+
+            circle_marker_d76b163a29dc4ef0933e0545481a1d39.bindPopup(popup_c3560f57844e4531ba923e25771c9f3b);
+
+            
+        
+    
+
+            var circle_marker_b9c85f544c27466ea7945a6308cfab84 = L.circleMarker(
+                [47.7510741,-120.7401386],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_eaff0492946d44dc908a84ffdc27ecc5 = L.popup({maxWidth: '300'});
+
+            
+                var html_a351e47ba43b41999608929ab8bc58fc = $('<div id="html_a351e47ba43b41999608929ab8bc58fc" style="width: 100.0%; height: 100.0%;">Washington appeared 25 times in NYTimes articles</div>')[0];
+                popup_eaff0492946d44dc908a84ffdc27ecc5.setContent(html_a351e47ba43b41999608929ab8bc58fc);
+            
+
+            circle_marker_b9c85f544c27466ea7945a6308cfab84.bindPopup(popup_eaff0492946d44dc908a84ffdc27ecc5);
+
+            
+        
+    
+
+            var circle_marker_6222a7e2e0934156a928cb6f52a1ecaa = L.circleMarker(
+                [37.09024,-95.712891],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_cc6ee0d419e24cd5b0a5f4370acd61dd = L.popup({maxWidth: '300'});
+
+            
+                var html_86d5a825ada840cf82fe89ea910353a7 = $('<div id="html_86d5a825ada840cf82fe89ea910353a7" style="width: 100.0%; height: 100.0%;">United States appeared 66 times in NYTimes articles</div>')[0];
+                popup_cc6ee0d419e24cd5b0a5f4370acd61dd.setContent(html_86d5a825ada840cf82fe89ea910353a7);
+            
+
+            circle_marker_6222a7e2e0934156a928cb6f52a1ecaa.bindPopup(popup_cc6ee0d419e24cd5b0a5f4370acd61dd);
+
+            
+        
+    
+
+            var circle_marker_fe743411a13245038fc4debda0b78e22 = L.circleMarker(
+                [42.4603719,-71.3489484],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_6c80a33bdde743d59d483a45bbefa24e = L.popup({maxWidth: '300'});
+
+            
+                var html_5a6212ee8f4b4c5098287200d3360213 = $('<div id="html_5a6212ee8f4b4c5098287200d3360213" style="width: 100.0%; height: 100.0%;">Concord appeared 0 times in NYTimes articles</div>')[0];
+                popup_6c80a33bdde743d59d483a45bbefa24e.setContent(html_5a6212ee8f4b4c5098287200d3360213);
+            
+
+            circle_marker_fe743411a13245038fc4debda0b78e22.bindPopup(popup_6c80a33bdde743d59d483a45bbefa24e);
+
+            
+        
+    
+
+            var circle_marker_c93fbfecf028409cb048fcf723d00328 = L.circleMarker(
+                [40.7127837,-74.0059413],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_0efa2824e211421b8500be9fa42928c4 = L.popup({maxWidth: '300'});
+
+            
+                var html_0bd8e808a9b043e0a50d511519ade550 = $('<div id="html_0bd8e808a9b043e0a50d511519ade550" style="width: 100.0%; height: 100.0%;">New York City appeared 8 times in NYTimes articles</div>')[0];
+                popup_0efa2824e211421b8500be9fa42928c4.setContent(html_0bd8e808a9b043e0a50d511519ade550);
+            
+
+            circle_marker_c93fbfecf028409cb048fcf723d00328.bindPopup(popup_0efa2824e211421b8500be9fa42928c4);
+
+            
+        
+    
+
+            var circle_marker_38c245a3df3e4c3e9c51ce5fb3669218 = L.circleMarker(
+                [31.9685988,-99.9018131],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_ae0c53299e284b398f2dc5b7f482b14f = L.popup({maxWidth: '300'});
+
+            
+                var html_38d4149211de4165a46292ba4a432540 = $('<div id="html_38d4149211de4165a46292ba4a432540" style="width: 100.0%; height: 100.0%;">Texas appeared 15 times in NYTimes articles</div>')[0];
+                popup_ae0c53299e284b398f2dc5b7f482b14f.setContent(html_38d4149211de4165a46292ba4a432540);
+            
+
+            circle_marker_38c245a3df3e4c3e9c51ce5fb3669218.bindPopup(popup_ae0c53299e284b398f2dc5b7f482b14f);
+
+            
+        
+    
+
+            var circle_marker_881dbc1a9f574497a4a6283c12296959 = L.circleMarker(
+                [35.7595731,-79.0192997],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_d36eaaa56371484c93ca40d817ee0faf = L.popup({maxWidth: '300'});
+
+            
+                var html_62654194aacb4f328143d9e383605962 = $('<div id="html_62654194aacb4f328143d9e383605962" style="width: 100.0%; height: 100.0%;">North Carolina appeared 3 times in NYTimes articles</div>')[0];
+                popup_d36eaaa56371484c93ca40d817ee0faf.setContent(html_62654194aacb4f328143d9e383605962);
+            
+
+            circle_marker_881dbc1a9f574497a4a6283c12296959.bindPopup(popup_d36eaaa56371484c93ca40d817ee0faf);
+
+            
+        
+    
+
+            var circle_marker_5313a3e55b9e4a55808edf7432bb77a7 = L.circleMarker(
+                [26.1224386,-80.1373174],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_3f0495229d024570a32451b2155282c8 = L.popup({maxWidth: '300'});
+
+            
+                var html_6bc7b7b355f8406b968dee5b742731c5 = $('<div id="html_6bc7b7b355f8406b968dee5b742731c5" style="width: 100.0%; height: 100.0%;">Fort Lauderdale appeared 8 times in NYTimes articles</div>')[0];
+                popup_3f0495229d024570a32451b2155282c8.setContent(html_6bc7b7b355f8406b968dee5b742731c5);
+            
+
+            circle_marker_5313a3e55b9e4a55808edf7432bb77a7.bindPopup(popup_3f0495229d024570a32451b2155282c8);
+
+            
+        
+    
+
+            var circle_marker_05a7b0a06d054ff69fe9c898680e7692 = L.circleMarker(
+                [18.220833,-66.590149],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_9d9a3825561a4e8f9824ef0893cce644 = L.popup({maxWidth: '300'});
+
+            
+                var html_e6469430c07f482fb18e8afa5bdbb9c1 = $('<div id="html_e6469430c07f482fb18e8afa5bdbb9c1" style="width: 100.0%; height: 100.0%;">Puerto Rico appeared 6 times in NYTimes articles</div>')[0];
+                popup_9d9a3825561a4e8f9824ef0893cce644.setContent(html_e6469430c07f482fb18e8afa5bdbb9c1);
+            
+
+            circle_marker_05a7b0a06d054ff69fe9c898680e7692.bindPopup(popup_9d9a3825561a4e8f9824ef0893cce644);
+
+            
+        
+    
+
+            var circle_marker_ecebcd0570ba40e2b930fcd979c36503 = L.circleMarker(
+                [61.2180556,-149.9002778],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_ce8bd8277241465494d3cf0a96b5277f = L.popup({maxWidth: '300'});
+
+            
+                var html_488d497aabee417d8d856ba45be7b088 = $('<div id="html_488d497aabee417d8d856ba45be7b088" style="width: 100.0%; height: 100.0%;">Anchorage appeared 5 times in NYTimes articles</div>')[0];
+                popup_ce8bd8277241465494d3cf0a96b5277f.setContent(html_488d497aabee417d8d856ba45be7b088);
+            
+
+            circle_marker_ecebcd0570ba40e2b930fcd979c36503.bindPopup(popup_ce8bd8277241465494d3cf0a96b5277f);
+
+            
+        
+    
+
+            var circle_marker_22b75efd5b9a444997753a53c8e8d5a5 = L.circleMarker(
+                [43.2994285,-74.2179326],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_8e21272f494a4ed180dfe2e3661a2450 = L.popup({maxWidth: '300'});
+
+            
+                var html_fc2b3650df614749828d28bc5d4afa1f = $('<div id="html_fc2b3650df614749828d28bc5d4afa1f" style="width: 100.0%; height: 100.0%;">New York State appeared 2 times in NYTimes articles</div>')[0];
+                popup_8e21272f494a4ed180dfe2e3661a2450.setContent(html_fc2b3650df614749828d28bc5d4afa1f);
+            
+
+            circle_marker_22b75efd5b9a444997753a53c8e8d5a5.bindPopup(popup_8e21272f494a4ed180dfe2e3661a2450);
+
+            
+        
+    
+
+            var circle_marker_25a0e08ce0d04c5e9bda8397950e4a57 = L.circleMarker(
+                [37.9642529,-91.8318334],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_c11165e5d285415c8e555f4c83e94321 = L.popup({maxWidth: '300'});
+
+            
+                var html_656bdec5f0e8416d9abc111453721608 = $('<div id="html_656bdec5f0e8416d9abc111453721608" style="width: 100.0%; height: 100.0%;">Missouri appeared 3 times in NYTimes articles</div>')[0];
+                popup_c11165e5d285415c8e555f4c83e94321.setContent(html_656bdec5f0e8416d9abc111453721608);
+            
+
+            circle_marker_25a0e08ce0d04c5e9bda8397950e4a57.bindPopup(popup_c11165e5d285415c8e555f4c83e94321);
+
+            
+        
+    
+
+            var circle_marker_effac5e0dca94b26925be63b3f49ed06 = L.circleMarker(
+                [38.7442175,-90.3053915],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_d122ab3aaa8b4cb4a13ec6aa7068230e = L.popup({maxWidth: '300'});
+
+            
+                var html_7f8d3079b8e0466ead590111f1c5f64d = $('<div id="html_7f8d3079b8e0466ead590111f1c5f64d" style="width: 100.0%; height: 100.0%;">Ferguson appeared 5 times in NYTimes articles</div>')[0];
+                popup_d122ab3aaa8b4cb4a13ec6aa7068230e.setContent(html_7f8d3079b8e0466ead590111f1c5f64d);
+            
+
+            circle_marker_effac5e0dca94b26925be63b3f49ed06.bindPopup(popup_d122ab3aaa8b4cb4a13ec6aa7068230e);
+
+            
+        
+    
+
+            var circle_marker_48509420d9484ac1b9238819ae2b4a97 = L.circleMarker(
+                [39.399872,-8.224454],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_556fa91561a84818a90f266fc5bc3cde = L.popup({maxWidth: '300'});
+
+            
+                var html_eb110334943641a4aeb605fcaed7530c = $('<div id="html_eb110334943641a4aeb605fcaed7530c" style="width: 100.0%; height: 100.0%;">Portugal appeared 8 times in NYTimes articles</div>')[0];
+                popup_556fa91561a84818a90f266fc5bc3cde.setContent(html_eb110334943641a4aeb605fcaed7530c);
+            
+
+            circle_marker_48509420d9484ac1b9238819ae2b4a97.bindPopup(popup_556fa91561a84818a90f266fc5bc3cde);
+
+            
+        
+    
+
+            var circle_marker_4f83dc3ae94f44b1ab4560442127c656 = L.circleMarker(
+                [32.3182314,-86.902298],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_dd881813d98e46f2861dcda631065e0b = L.popup({maxWidth: '300'});
+
+            
+                var html_78110651fa9243f6994a9c1b7ca09e92 = $('<div id="html_78110651fa9243f6994a9c1b7ca09e92" style="width: 100.0%; height: 100.0%;">Alabama appeared 8 times in NYTimes articles</div>')[0];
+                popup_dd881813d98e46f2861dcda631065e0b.setContent(html_78110651fa9243f6994a9c1b7ca09e92);
+            
+
+            circle_marker_4f83dc3ae94f44b1ab4560442127c656.bindPopup(popup_dd881813d98e46f2861dcda631065e0b);
+
+            
+        
+    
+
+            var circle_marker_210f5304d3934b609fcc7b3ab5936982 = L.circleMarker(
+                [36.5868261,37.0480843],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_749a49f634da4b35a64ec26a3f3c5498 = L.popup({maxWidth: '300'});
+
+            
+                var html_26a6d02896ee4577b80aeba941d002d9 = $('<div id="html_26a6d02896ee4577b80aeba941d002d9" style="width: 100.0%; height: 100.0%;">Azaz appeared 5 times in NYTimes articles</div>')[0];
+                popup_749a49f634da4b35a64ec26a3f3c5498.setContent(html_26a6d02896ee4577b80aeba941d002d9);
+            
+
+            circle_marker_210f5304d3934b609fcc7b3ab5936982.bindPopup(popup_749a49f634da4b35a64ec26a3f3c5498);
+
+            
+        
+    
+
+            var circle_marker_cfbb79996bc7450fbf3035a917571340 = L.circleMarker(
+                [34.802075,38.996815],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_8f26a43778bd4285bbf1c13df30e49dc = L.popup({maxWidth: '300'});
+
+            
+                var html_4ef90c12b433485f952076f3e94f2e0b = $('<div id="html_4ef90c12b433485f952076f3e94f2e0b" style="width: 100.0%; height: 100.0%;">Syria appeared 14 times in NYTimes articles</div>')[0];
+                popup_8f26a43778bd4285bbf1c13df30e49dc.setContent(html_4ef90c12b433485f952076f3e94f2e0b);
+            
+
+            circle_marker_cfbb79996bc7450fbf3035a917571340.bindPopup(popup_8f26a43778bd4285bbf1c13df30e49dc);
+
+            
+        
+    
+
+            var circle_marker_b41f8652a5d74b1d9259ed98e53bcf52 = L.circleMarker(
+                [36.716477,37.114661],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_c239b69f87d8448d9074e29acc556fe2 = L.popup({maxWidth: '300'});
+
+            
+                var html_0a8c7305f4fb4decab306481a146bd6b = $('<div id="html_0a8c7305f4fb4decab306481a146bd6b" style="width: 100.0%; height: 100.0%;">Kilis appeared 1 times in NYTimes articles</div>')[0];
+                popup_c239b69f87d8448d9074e29acc556fe2.setContent(html_0a8c7305f4fb4decab306481a146bd6b);
+            
+
+            circle_marker_b41f8652a5d74b1d9259ed98e53bcf52.bindPopup(popup_c239b69f87d8448d9074e29acc556fe2);
+
+            
+        
+    
+
+            var circle_marker_27448636a7734971a7490f8259db77f2 = L.circleMarker(
+                [7.539989,-5.54708],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_6d21d9a81958463a9c75f300a4d8579c = L.popup({maxWidth: '300'});
+
+            
+                var html_a5e0bb98d4cb4d179a4e4a5c622102e3 = $('<div id="html_a5e0bb98d4cb4d179a4e4a5c622102e3" style="width: 100.0%; height: 100.0%;">Ivory Coast appeared 5 times in NYTimes articles</div>')[0];
+                popup_6d21d9a81958463a9c75f300a4d8579c.setContent(html_a5e0bb98d4cb4d179a4e4a5c622102e3);
+            
+
+            circle_marker_27448636a7734971a7490f8259db77f2.bindPopup(popup_6d21d9a81958463a9c75f300a4d8579c);
+
+            
+        
+    
+
+            var circle_marker_bc13cf4318aa4ae4b69fa2764fde3e1b = L.circleMarker(
+                [36.778261,-119.4179324],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_5a3f5bb39042490bad1391ee1c0559c7 = L.popup({maxWidth: '300'});
+
+            
+                var html_69c4cceb36e44c4f863d7a38c7002532 = $('<div id="html_69c4cceb36e44c4f863d7a38c7002532" style="width: 100.0%; height: 100.0%;">California appeared 16 times in NYTimes articles</div>')[0];
+                popup_5a3f5bb39042490bad1391ee1c0559c7.setContent(html_69c4cceb36e44c4f863d7a38c7002532);
+            
+
+            circle_marker_bc13cf4318aa4ae4b69fa2764fde3e1b.bindPopup(popup_5a3f5bb39042490bad1391ee1c0559c7);
+
+            
+        
+    
+
+            var circle_marker_d3ab4f3745db4853b99a1249ded8fc12 = L.circleMarker(
+                [35.86166,104.195397],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_d2c01397abcb48dd984137ec8d050cb2 = L.popup({maxWidth: '300'});
+
+            
+                var html_49329d30ea604ad3b67d8da85d99863e = $('<div id="html_49329d30ea604ad3b67d8da85d99863e" style="width: 100.0%; height: 100.0%;">China appeared 31 times in NYTimes articles</div>')[0];
+                popup_d2c01397abcb48dd984137ec8d050cb2.setContent(html_49329d30ea604ad3b67d8da85d99863e);
+            
+
+            circle_marker_d3ab4f3745db4853b99a1249ded8fc12.bindPopup(popup_d2c01397abcb48dd984137ec8d050cb2);
+
+            
+        
+    
+
+            var circle_marker_710bf3d35cf74797af31af2281c7e2f8 = L.circleMarker(
+                [40.6781784,-73.9441579],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_2cc5704a70e74326a554b5a9a014e7e9 = L.popup({maxWidth: '300'});
+
+            
+                var html_8bb34327070d449aa4ae8e1f1c5c9b5c = $('<div id="html_8bb34327070d449aa4ae8e1f1c5c9b5c" style="width: 100.0%; height: 100.0%;">Brooklyn appeared 10 times in NYTimes articles</div>')[0];
+                popup_2cc5704a70e74326a554b5a9a014e7e9.setContent(html_8bb34327070d449aa4ae8e1f1c5c9b5c);
+            
+
+            circle_marker_710bf3d35cf74797af31af2281c7e2f8.bindPopup(popup_2cc5704a70e74326a554b5a9a014e7e9);
+
+            
+        
+    
+
+            var circle_marker_8370fd8c4cff4442a7a48f866b4d444a = L.circleMarker(
+                [-14.235004,-51.92528],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_61cedb9d73154dea9bc4f6bbefd18f60 = L.popup({maxWidth: '300'});
+
+            
+                var html_dd394005f7cf421a9547b26849d9006b = $('<div id="html_dd394005f7cf421a9547b26849d9006b" style="width: 100.0%; height: 100.0%;">Brazil appeared 26 times in NYTimes articles</div>')[0];
+                popup_61cedb9d73154dea9bc4f6bbefd18f60.setContent(html_dd394005f7cf421a9547b26849d9006b);
+            
+
+            circle_marker_8370fd8c4cff4442a7a48f866b4d444a.bindPopup(popup_61cedb9d73154dea9bc4f6bbefd18f60);
+
+            
+        
+    
+
+            var circle_marker_f55f0ef1de8f4dc18443b5c233a56303 = L.circleMarker(
+                [-15.6014109,-56.0978917],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.5
+                    }
+                )
+                .setRadius(6)
+                .addTo(map_a02a7c8d33924e19abc3ff0d3f764177);
+            
+    
+            var popup_cfcb6c8d29f24458a0c7f81aafcebb85 = L.popup({maxWidth: '300'});
+
+            
+                var html_942e7b72af8d49258e7e4cab5689e741 = $('<div id="html_942e7b72af8d49258e7e4cab5689e741" style="width: 100.0%; height: 100.0%;">Cuiaba appeared 3 times in NYTimes articles</div>')[0];
+                popup_cfcb6c8d29f24458a0c7f81aafcebb85.setContent(html_942e7b72af8d49258e7e4cab5689e741);
+            
+
+            circle_marker_f55f0ef1de8f4dc18443b5c233a56303.bindPopup(popup_cfcb6c8d29f24458a0c7f81aafcebb85);
+
+            
+        
+</script>
